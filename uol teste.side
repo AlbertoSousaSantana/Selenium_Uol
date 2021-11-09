@@ -1,0 +1,127 @@
+{
+  "id": "8d2f86da-e69b-48fb-99ec-d19958ea76c4",
+  "version": "2.0",
+  "name": "uol",
+  "url": "https://www.uol.com.br",
+  "tests": [{
+    "id": "c2a11f6a-46f3-4c9c-9000-811655ad32eb",
+    "name": "acessar economia",
+    "commands": [{
+      "id": "763597f0-9544-48d8-b15f-7792f4b2c4b9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd0ac0de-5908-45b6-a148-88a5b79b15eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c49baeb-aea7-45ba-b9d4-36d2c50d111c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menuDesktop__item--economia .menuDesktop__link__title",
+      "targets": [
+        ["css=.menuDesktop__item--economia .menuDesktop__link__title", "css:finder"],
+        ["xpath=//div[@id='app']/div/header/nav/ul/li[4]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[4]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7836c9ed-925a-4706-8338-aa37aca9d518",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info:nth-child(2) .name",
+      "targets": [
+        ["css=.info:nth-child(2) .name", "css:finder"],
+        ["xpath=//div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca1a6ca6-31d2-4636-8170-83f858bf154a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title-name",
+      "targets": [
+        ["css=.title-name", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb9a2ae9-a93c-4ad3-8b5f-0e02277fbe49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title-name",
+      "targets": [
+        ["css=.title-name", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7466c364-fc6c-4593-8f5f-baec932bc966",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.title-name",
+      "targets": [
+        ["css=.title-name", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "PESO ARGENTINO"
+    }, {
+      "id": "48f2e4d6-dd15-4174-9599-a27dccca61ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.drop-select-large > .change-currency > .final-term",
+      "targets": [
+        ["css=.drop-select-large > .change-currency > .final-term", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1dead04-a646-4f8d-9589-4b9a6ba237e0",
+      "comment": "",
+      "command": "type",
+      "target": "css=.drop-select-large > .change-currency .input-term",
+      "targets": [
+        ["css=.drop-select-large > .change-currency .input-term", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "estados unidos"
+    }, {
+      "id": "dbd36968-d9a1-4212-85e1-dd9f8fbcfb6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selected-term > .country-name",
+      "targets": [
+        ["css=.selected-term > .country-name", "css:finder"],
+        ["xpath=//li/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a33563f1-9c91-45c7-9f40-efa346b4a716",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.title-name",
+      "targets": [
+        ["css=.title-name", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "DÓLAR COMERCIAL"
+    }]
+  }],
+  "suites": [{
+    "id": "9cc63c27-3b57-4428-be34-4d501e5c435b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c2a11f6a-46f3-4c9c-9000-811655ad32eb"]
+  }],
+  "urls": ["https://www.uol.com.br/"],
+  "plugins": []
+}
